@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  Api:
+    image: microservicekafkaapimessage:dev
+    container_name: MicroService-Kafka.ApiMessage
+    build:
+      context: .
+      dockerfile: E:\\Calismalar\\CoreOrnCalismalar\\Microservice-Kafka-Development\\MicroService-Kafka.ApiMessage\\DockerFile
+    ports:
+        - "0.0.0.0:32780:443"
+    networks:
+      - my-network
+networks:
+  my-network:
+    external: true

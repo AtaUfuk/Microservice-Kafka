@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microservice_Kafka.Business.IServices;
-using Microservice_Kafka.Business.Managers;
+using MicroService_Kafka.ApiMessage.DependecyInversion;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MicroService_Kafka.ApiUI
+namespace MicroService_Kafka.ApiMessage
 {
     public class Startup
     {
@@ -28,7 +27,7 @@ namespace MicroService_Kafka.ApiUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IMessageService, MessagesManager>();
+            services.AddSingleton<IServices, Manager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +38,7 @@ namespace MicroService_Kafka.ApiUI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

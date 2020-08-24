@@ -11,5 +11,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Microservice-Kafka.Business\Microservice-Kafka.Business.csproj" />
+    <ProjectReference Include="..\Microservice-Kafka.Common\Microservice-Kafka.Common.csproj" />
+  </ItemGroup>
+
 
 </Project>

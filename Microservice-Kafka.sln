@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice-Kafka.Common",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService-Kafka.ApiUI", "MicroService-Kafka.ApiUI\MicroService-Kafka.ApiUI.csproj", "{155F783F-C097-4082-AC4B-A002706F154E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService-Kafka.ApiMessage", "MicroService-Kafka.ApiMessage\MicroService-Kafka.ApiMessage.csproj", "{C78303BD-320B-4914-8E98-AB1D605BB5AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{155F783F-C097-4082-AC4B-A002706F154E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155F783F-C097-4082-AC4B-A002706F154E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155F783F-C097-4082-AC4B-A002706F154E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78303BD-320B-4914-8E98-AB1D605BB5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78303BD-320B-4914-8E98-AB1D605BB5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78303BD-320B-4914-8E98-AB1D605BB5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78303BD-320B-4914-8E98-AB1D605BB5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

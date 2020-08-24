@@ -4,13 +4,13 @@
     {
         public ObjResult(bool _isSuccess, T _object) : base(_isSuccess)
         {
-            Object = _object;
+            Events = _object;
         }
         public ObjResult(bool _isSuccess, string _message, int _resultCode, T _object) : base(_isSuccess, _message, _resultCode)
         {
-            Object = _object;
+            Events = _object;
         }
 
-        public T Object { get; }
+        public T Events { get; }
     }
 }

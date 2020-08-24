@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  WebSite:
+    image: microservicekafkaapiui:dev
+    container_name: MicroService-Kafka.ApiUI
+    build:
+      context: .
+      dockerfile: E:\\Calismalar\\CoreOrnCalismalar\\Microservice-Kafka-Development\\MicroService-Kafka.ApiUI\\DockerFile
+    ports:
+        - "0.0.0.0:32776:443"
+    networks:
+      - my-network
+    environment:
+      - API_URL=Api:5555
+  
+networks:
+  my-network:
+    external: true
